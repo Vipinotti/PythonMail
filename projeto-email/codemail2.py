@@ -1,6 +1,5 @@
 import smtplib
 import email.message
-from SEGREDOS import senha1
 from SEGREDOS import email1
 
 def enviar_email():
@@ -12,7 +11,7 @@ def enviar_email():
     msg['Subject'] = "Assunto"
     msg['From'] = email1
     msg['To'] = 'destinatário'
-    senha = 'senha' #senha específica Goolge, para Gmail!
+    senha = 'senha' #senha específica Google, para Gmail!
     msg.add_header('Content-Type', 'text/html')
     msg.set_payload(corpo_email)
 
